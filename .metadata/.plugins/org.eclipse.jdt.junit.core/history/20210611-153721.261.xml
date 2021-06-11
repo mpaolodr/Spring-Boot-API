@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="ItemServiceUnitTest" project="spring-boot" tests="4" started="4" failures="0" errors="0" ignored="0">
+  <testsuite name="training.qa.springboot.service.ItemServiceUnitTest" time="0.19" displayname="ItemServiceUnitTest" uniqueid="[engine:junit-jupiter]/[class:training.qa.springboot.service.ItemServiceUnitTest]">
+    <testcase name="testCreateUnit" classname="training.qa.springboot.service.ItemServiceUnitTest" time="0.141" displayname="testCreateUnit()" uniqueid="[engine:junit-jupiter]/[class:training.qa.springboot.service.ItemServiceUnitTest]/[method:testCreateUnit()]"/>
+    <testcase name="testReadAll" classname="training.qa.springboot.service.ItemServiceUnitTest" time="0.021" displayname="testReadAll()" uniqueid="[engine:junit-jupiter]/[class:training.qa.springboot.service.ItemServiceUnitTest]/[method:testReadAll()]"/>
+    <testcase name="testReadOne" classname="training.qa.springboot.service.ItemServiceUnitTest" time="0.009" displayname="testReadOne()" uniqueid="[engine:junit-jupiter]/[class:training.qa.springboot.service.ItemServiceUnitTest]/[method:testReadOne()]"/>
+    <testcase name="testUpdate" classname="training.qa.springboot.service.ItemServiceUnitTest" time="0.014" displayname="testUpdate()" uniqueid="[engine:junit-jupiter]/[class:training.qa.springboot.service.ItemServiceUnitTest]/[method:testUpdate()]"/>
+  </testsuite>
+</testrun>

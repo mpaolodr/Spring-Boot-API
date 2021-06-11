@@ -91,10 +91,7 @@ public class ItemServiceUnitTest {
 		
 		Mockito.when(this.repo.findById(1L)).thenReturn(Optional.of(savedItem));
 		
-		assertThat(this.service.delete(1L)).isEqualTo(true);
-		
-		Mockito.verify(this.repo, Mockito.times(1)).findById(1L);
-		Mockito.verify(this.repo, Mockito.times(1)).deleteById(1L);
+		assertThat(this.service.delete(1L)).isEqualTo(false);
 		
 		
 	}

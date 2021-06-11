@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="ItemControllerTest" project="spring-boot" tests="5" started="5" failures="0" errors="0" ignored="0">
+  <testsuite name="training.qa.springboot.controller.ItemControllerTest" time="0.518" displayname="ItemControllerTest" uniqueid="[engine:junit-jupiter]/[class:training.qa.springboot.controller.ItemControllerTest]">
+    <testcase name="testReadAll" classname="training.qa.springboot.controller.ItemControllerTest" time="0.43" displayname="testReadAll()" uniqueid="[engine:junit-jupiter]/[class:training.qa.springboot.controller.ItemControllerTest]/[method:testReadAll()]"/>
+    <testcase name="testReadOne" classname="training.qa.springboot.controller.ItemControllerTest" time="0.032" displayname="testReadOne()" uniqueid="[engine:junit-jupiter]/[class:training.qa.springboot.controller.ItemControllerTest]/[method:testReadOne()]"/>
+    <testcase name="testCreate" classname="training.qa.springboot.controller.ItemControllerTest" time="0.006" displayname="testCreate()" uniqueid="[engine:junit-jupiter]/[class:training.qa.springboot.controller.ItemControllerTest]/[method:testCreate()]"/>
+    <testcase name="testDelete" classname="training.qa.springboot.controller.ItemControllerTest" time="0.02" displayname="testDelete()" uniqueid="[engine:junit-jupiter]/[class:training.qa.springboot.controller.ItemControllerTest]/[method:testDelete()]"/>
+    <testcase name="testUpdate" classname="training.qa.springboot.controller.ItemControllerTest" time="0.026" displayname="testUpdate()" uniqueid="[engine:junit-jupiter]/[class:training.qa.springboot.controller.ItemControllerTest]/[method:testUpdate()]"/>
+  </testsuite>
+</testrun>

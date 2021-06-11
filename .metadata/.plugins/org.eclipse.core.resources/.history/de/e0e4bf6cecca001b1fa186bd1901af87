@@ -79,24 +79,7 @@ public class ItemServiceUnitTest {
 		Mockito.when(this.repo.findById(1L)).thenReturn(Optional.of(savedItem));
 		Mockito.when(this.repo.save(updatedItem)).thenReturn(updatedItem);
 		
-		assertThat(this.service.update(1L, updatedItem).getItemName()).isEqualTo(updatedItem.getItemName());
-	
-		Mockito.verify(this.repo, Mockito.times(1)).findById(1L);
-	}
-	
-	@Test 
-	public void testDelete() {
-		
-		Item savedItem = new Item(1L, "Test Item 1", 10.99);
-		
-		Mockito.when(this.repo.findById(1L)).thenReturn(Optional.of(savedItem));
-		
-		assertThat(this.service.delete(1L)).isEqualTo(true);
-		
-		Mockito.verify(this.repo, Mockito.times(1)).findById(1L);
-		Mockito.verify(this.repo, Mockito.times(1)).deleteById(1L);
-		
-		
+		assertThat(this.service.update(1L, updatedItem).toString()).isEqualTo(updatedItem.toString());
 	}
 	
 }

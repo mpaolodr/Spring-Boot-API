@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="ItemServiceUnitTest" project="spring-boot" tests="5" started="5" failures="0" errors="0" ignored="0">
+  <testsuite name="training.qa.springboot.service.ItemServiceUnitTest" time="0.209" displayname="ItemServiceUnitTest" uniqueid="[engine:junit-jupiter]/[class:training.qa.springboot.service.ItemServiceUnitTest]">
+    <testcase name="testCreateUnit" classname="training.qa.springboot.service.ItemServiceUnitTest" time="0.154" displayname="testCreateUnit()" uniqueid="[engine:junit-jupiter]/[class:training.qa.springboot.service.ItemServiceUnitTest]/[method:testCreateUnit()]"/>
+    <testcase name="testReadAll" classname="training.qa.springboot.service.ItemServiceUnitTest" time="0.024" displayname="testReadAll()" uniqueid="[engine:junit-jupiter]/[class:training.qa.springboot.service.ItemServiceUnitTest]/[method:testReadAll()]"/>
+    <testcase name="testReadOne" classname="training.qa.springboot.service.ItemServiceUnitTest" time="0.007" displayname="testReadOne()" uniqueid="[engine:junit-jupiter]/[class:training.qa.springboot.service.ItemServiceUnitTest]/[method:testReadOne()]"/>
+    <testcase name="testDelete" classname="training.qa.springboot.service.ItemServiceUnitTest" time="0.007" displayname="testDelete()" uniqueid="[engine:junit-jupiter]/[class:training.qa.springboot.service.ItemServiceUnitTest]/[method:testDelete()]"/>
+    <testcase name="testUpdate" classname="training.qa.springboot.service.ItemServiceUnitTest" time="0.01" displayname="testUpdate()" uniqueid="[engine:junit-jupiter]/[class:training.qa.springboot.service.ItemServiceUnitTest]/[method:testUpdate()]"/>
+  </testsuite>
+</testrun>

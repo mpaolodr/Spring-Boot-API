@@ -94,7 +94,7 @@ public class ItemServiceUnitTest {
 		assertThat(this.service.delete(1L)).isEqualTo(true);
 		
 		Mockito.verify(this.repo, Mockito.times(1)).findById(1L);
-		Mockito.verify(this.repo, Mockito.times(1)).deleteById(1L);
+		Mockito.verify(this.repo, Mockito.times(2)).deleteById(1L);
 		
 		
 	}
