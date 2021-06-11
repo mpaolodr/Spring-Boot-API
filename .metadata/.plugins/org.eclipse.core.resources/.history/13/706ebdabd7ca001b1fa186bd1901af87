@@ -4,7 +4,6 @@ import java.util.List;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -71,16 +70,6 @@ public class ItemController {
 	
 	
 //	Delete
-	@DeleteMapping("/remove/{itemId}")
-	public ResponseEntity<String> delete(@PathVariable Long itemId) {
-		
-		if (this.service.delete(itemId)) {
-			return new ResponseEntity<String>("Item was successfully removed", HttpStatus.ACCEPTED);
-		}
-		
-		
-		return new  ResponseEntity<String>("No Item with that ID was found", HttpStatus.BAD_REQUEST);
-	}
 	
 
 }
