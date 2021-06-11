@@ -9,6 +9,6 @@ import training.qa.springboot.domain.Item;
 @Repository
 public interface ItemRepo extends JpaRepository<Item, Long> {
 	
-	@Query(value = "SELECT * FROM Item ORDER BY item_id DESC LIMIT 1", nativeQuery=true)
+	@Query(value = "SELECT * FROM Item ORDER BY DESC LIMIT 1", nativeQuery=true)
 	Item findLatestItem();
 }

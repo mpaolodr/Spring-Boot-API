@@ -50,36 +50,8 @@ public class ItemService {
 	
 	
 //	UPDATE
-	public Item update(Long itemId, Item newItem) {
-		
-		Optional<Item> toUpdate = this.repo.findById(itemId);
-		
-		if (toUpdate.isPresent()) {
-			Item i = toUpdate.get();
-			
-			i.setItemName(newItem.getItemName());
-			i.setItemPrice(newItem.getItemPrice());
-			
-			this.repo.save(i);
-			
-			return i;
-		}
-		
-		return null;
-	}
 	
 	
 //	DELETE
-	public boolean delete(Long itemId) {
-		
-		Optional<Item> toDelete = this.repo.findById(itemId);
-		
-		if (toDelete.isPresent()) {
-			this.repo.deleteById(itemId);
-			return true;
-		}
-		
-		return false;
-	}
 
 }
