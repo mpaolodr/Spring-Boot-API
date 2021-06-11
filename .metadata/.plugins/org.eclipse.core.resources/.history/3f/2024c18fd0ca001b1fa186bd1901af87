@@ -1,0 +1,8 @@
+package training.qa.springboot.service;
+
+@Service
+public class ItemService {
+	
+	
+
+}

@@ -1,0 +1,5 @@
+package training.qa.springboot.repo;
+
+public class ItemRepo {
+
+}
