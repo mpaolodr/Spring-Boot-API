@@ -1,7 +1,11 @@
 package training.qa.springboot.controller;
 
+import java.util.List;
+
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -29,7 +33,25 @@ public class ItemController {
 		return new ResponseEntity<String>("Sorry. There was a problem adding this item in the database", HttpStatus.BAD_REQUEST);
 	}
 	
-//	Read
+//	Read ONE
+	@GetMapping("/read/{itemId}")
+	public ResponseEntity<String> readOne(@PathVariable Long itemId) {
+		
+		Item i = this.service.readOne(itemId);
+		
+		if (i != null) {
+			String response = String.format("Item ID: %d, Item Name: %s, Item Price: %.2f", i.getItemId(), i.getItemName(), i.getItemPrice());
+			return new ResponseEntity<String>(response, HttpStatus.OK);
+		}
+		
+		return new ResponseEntity<String>("No item with that ID was found", HttpStatus.BAD_REQUEST);
+	}
+	
+//	Read ALL
+	@GetMapping("/read-all") 
+	public ResponseEntity<List<Item>> readAll() {
+		return new ResponseEntity<List<Item>>(this.service.readAll(), HttpStatus.OK);
+	}
 	
 	
 //	Update
