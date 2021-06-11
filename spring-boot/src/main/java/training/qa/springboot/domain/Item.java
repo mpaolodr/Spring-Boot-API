@@ -19,6 +19,14 @@ public class Item {
 	public Item() {}
 	
 	public Item(String itemName, Double itemPrice) {
+		super();
+		this.itemName = itemName;
+		this.itemPrice = itemPrice;
+	}
+	
+	public Item(Long itemId, String itemName, Double itemPrice) {
+		super();
+		this.itemId = itemId;
 		this.itemName = itemName;
 		this.itemPrice = itemPrice;
 	}

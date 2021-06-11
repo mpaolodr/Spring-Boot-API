@@ -1,0 +1,5 @@
+package training.qa.springboot.service;
+
+public class ItemServiceUnitTest {
+
+}

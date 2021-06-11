@@ -1,0 +1,15 @@
+package training.qa.springboot.service;
+
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.mock.mockito.MockBean;
+
+@SpringBootTest
+public class ItemServiceUnitTest {
+	
+	@MockBean
+	private ItemRepo repo;
+	
+	@Autowired
+	private ItemService service;
+	
+}

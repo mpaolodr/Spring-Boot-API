@@ -1,0 +1,5 @@
+package training.qa.springboot.controller;
+
+public class ItemControllerTest {
+
+}

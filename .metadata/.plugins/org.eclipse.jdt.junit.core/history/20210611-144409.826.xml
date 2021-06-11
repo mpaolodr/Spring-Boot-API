@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="ItemControllerTest" project="spring-boot" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="training.qa.springboot.controller.ItemControllerTest" time="0.468" displayname="ItemControllerTest" uniqueid="[engine:junit-jupiter]/[class:training.qa.springboot.controller.ItemControllerTest]">
+    <testcase name="testReadAll" classname="training.qa.springboot.controller.ItemControllerTest" time="0.459" displayname="testReadAll()" uniqueid="[engine:junit-jupiter]/[class:training.qa.springboot.controller.ItemControllerTest]/[method:testReadAll()]"/>
+    <testcase name="testCreate" classname="training.qa.springboot.controller.ItemControllerTest" time="0.008" displayname="testCreate()" uniqueid="[engine:junit-jupiter]/[class:training.qa.springboot.controller.ItemControllerTest]/[method:testCreate()]"/>
+  </testsuite>
+</testrun>

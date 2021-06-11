@@ -1,0 +1,53 @@
+package training.qa.springboot.controller;
+
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
+import org.springframework.http.MediaType;
+import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.test.web.servlet.RequestBuilder;
+
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+import training.qa.springboot.domain.Item;
+
+@SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
+@AutoConfigureMockMvc
+public class ItemControllerTest {
+
+	@Autowired
+	private MockMvc mock; // mock our controller as well as any relevant mappers
+
+	@Autowired
+	private ObjectMapper mapper; // converts requests to JSON format
+
+	@Test
+	public void testCreate() throws JsonProcessingException {
+		Item item = new Item("Test Item 1", 10.99);
+
+//		convert to JSON
+		String itemAsJSON = this.mapper.writeValueAsString(item);
+
+//		mock request
+		RequestBuilder mockRequest = 
+				post("/item/add-item")
+				.contentType(MediaType.APPLICATION_JSON)
+				.content(itemAsJSON);
+		
+//		create saved item
+		Item savedItem = new Item(1L, "Test Item 1", 10.99);
+		
+//		convert our saved item to JSON
+		String savedItemAsJSON = this.mapper.writeValueAsString(savedItem);
+		
+//		check that status is 201
+		ResultMatcher matchStatus = status().isCreated();
+		
+	}
+}
